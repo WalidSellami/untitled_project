@@ -51,8 +51,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            // const Text(
+            //   'You have pushed the button this many times:',
+            // ),
+            Icon(
+              Icons.ac_unit,
+              size: 50.0,
             ),
             Text(
               '$_counter',
