@@ -54,20 +54,20 @@ class _MyHomePageState extends State<MyHomePage> {
             // const Text(
             //   'You have pushed the button this many times:',
             // ),
-            Icon(
-              Icons.ac_unit,
-              size: 50.0,
-            ),
-            Icon(
-              Icons.ac_unit,
-              size: 50.0,
-            ),
-            Icon(
-              Icons.ac_unit,
-              size: 50.0,
-            ),
+            // Icon(
+            //   Icons.ac_unit,
+            //   size: 50.0,
+            // ),
+            // Icon(
+            //   Icons.ac_unit,
+            //   size: 50.0,
+            // ),
+            // Icon(
+            //   Icons.ac_unit,
+            //   size: 50.0,
+            // ),
             Text(
-              '$_counter',
+              'Nbr of times: $_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
