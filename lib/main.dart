@@ -58,6 +58,14 @@ class _MyHomePageState extends State<MyHomePage> {
               Icons.ac_unit,
               size: 50.0,
             ),
+            Icon(
+              Icons.ac_unit,
+              size: 50.0,
+            ),
+            Icon(
+              Icons.ac_unit,
+              size: 50.0,
+            ),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
