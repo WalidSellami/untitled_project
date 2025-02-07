@@ -1,6 +1,6 @@
 # untitled_project
 
-A new Flutter project.
+A new Flutter project for testing git commands like creating, merging branches ...
 
 ## Getting Started
 
