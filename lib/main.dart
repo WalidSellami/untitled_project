@@ -52,17 +52,17 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Icon(
-              Icons.cyclone_rounded,
+              Icons.ac_unit_rounded,
               size: 50.0,
             ),
             SizedBox(
-              height: 20.0,
+              height: 26.0,
             ),
             Text.rich(
               TextSpan(
                 children: [
                   TextSpan(
-                    text: 'Nbr of times: ',
+                    text: 'Number of times clicked: ',
                   ),
                   TextSpan(
                     text: '$counter',
@@ -81,7 +81,8 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        backgroundColor: Colors.blue.shade700,
+        child: const Icon(Icons.add, color: Colors.white,),
       ),
     );
   }
