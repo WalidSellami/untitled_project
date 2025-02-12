@@ -48,34 +48,22 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Icon(
-              Icons.ac_unit_rounded,
-              size: 50.0,
-            ),
-            SizedBox(
-              height: 26.0,
-            ),
-            Text.rich(
+        child: Text.rich(
+          TextSpan(
+            children: [
               TextSpan(
-                children: [
-                  TextSpan(
-                    text: 'Number of times clicked: ',
-                  ),
-                  TextSpan(
-                    text: '$counter',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ]
+                text: 'Number of times clicked: ',
               ),
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
+              TextSpan(
+                text: '$counter',
+                style: TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ]
+          ),
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),
       floatingActionButton: FloatingActionButton(
