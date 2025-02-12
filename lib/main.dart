@@ -52,13 +52,27 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Icon(
-              Icons.ac_unit,
+              Icons.cyclone_rounded,
+              size: 50.0,
             ),
             SizedBox(
               height: 20.0,
             ),
-            Text(
-              'times: $counter',
+            Text.rich(
+              TextSpan(
+                children: [
+                  TextSpan(
+                    text: 'Nbr of times: ',
+                  ),
+                  TextSpan(
+                    text: '$counter',
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ]
+              ),
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
@@ -68,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
