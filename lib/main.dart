@@ -66,7 +66,11 @@ class _MyHomePageState extends State<MyHomePage> {
           style: Theme.of(context).textTheme.headlineMedium,
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
+        clipBehavior: Clip.antiAlias,
+        enableFeedback: true,
+        heroTag: 'increment',
         onPressed: incrementCounter,
         tooltip: 'Increment',
         backgroundColor: Colors.blue.shade700,
