@@ -1,6 +1,17 @@
+// import 'dart:developer';
+
 import 'package:flutter/material.dart';
+// import 'package:app_links/app_links.dart';
 
 void main() {
+
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // final appLinks = AppLinks();
+  // final sub = appLinks.uriLinkStream.listen((uri) {
+  //   log(uri.toString());
+  // });
+
   runApp(const MyApp());
 }
 
@@ -21,6 +32,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
